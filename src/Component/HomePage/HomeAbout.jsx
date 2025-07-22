@@ -3,7 +3,7 @@ import React from 'react';
 function HomeAbout() {
   return (
     <div className="container">
-      <div className="row d-flex align-items-center ">
+      <div className="row d-flex align-items-center mt-5">
         <div className="col-12 col-lg-7">
           <div className="h-100">
             <h1 className="titlecolor">Meet Paktrix : Lorem, ipsum dolor.</h1>
