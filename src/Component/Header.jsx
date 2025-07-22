@@ -1,51 +1,66 @@
-import React from 'react'
-import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
+import React from 'react';
+import { Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
     return (
-        <>
-            <div className='container'>
-                <Navbar expand="lg" className="border border-dark">
-                    <Container>
-                        <Navbar.Brand href="#home">
-                            <div style={{ width: '140px', height: 'auto' }} className='border'>
-                                <img
-                                    src={require("../assets/images/Media (2).jpeg")}
-                                    className="img-fluid w-100 h-100 object-fit-cover"
-                                    alt="Logo"
-                                />
-                            </div>
-                        </Navbar.Brand>
-                        <Navbar.Toggle aria-controls="offcanvasNavbar" />
-                        <Navbar.Offcanvas
-                            id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel"
-                            placement="end"
-                        >
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id="offcanvasNavbarLabel">
-                                    <div style={{ width: '120px', height: 'auto' }}>
-                                        <img
-                                            src={require("../assets/images/Media (2).jpeg")}
-                                            className="img-fluid w-100 h-100 object-fit-cover"
-                                            alt="Logo"
-                                        />
-                                    </div>
-                                </Offcanvas.Title>
-                            </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
-                                    <Nav.Link href="#home" className="border px-3 py-2 fw-bold rounded text-white navbar_menu">Home</Nav.Link>
-                                    <Nav.Link href="#about" className="border px-3 py-2 fw-bold rounded text-white navbar_menu">About Us</Nav.Link>
-                                    <Nav.Link href="#blog" className="border px-3 py-2 fw-bold rounded text-white navbar_menu">Blog</Nav.Link>
-                                </Nav>
-                            </Offcanvas.Body>
-                        </Navbar.Offcanvas>
-                    </Container>
-                </Navbar>
-            </div>
-        </>
-    )
+        <div className="">
+            <Navbar expand="lg" className="bg-white px-3 px-lg-4 shadow">
+                <Navbar.Brand as={Link} to="/">
+                    <div style={{ width: '170px', height: 'auto' }}>
+                        <img
+                            src={require("../assets/images/Media (2).jpeg")}
+                            className="img-fluid w-100 h-100 object-fit-cover"
+                            alt="Logo"
+                        />
+                    </div>
+                </Navbar.Brand>
+
+                <Navbar.Toggle aria-controls="offcanvasNavbar" className='border-0 fw-bold shadow-none' />
+                <Navbar.Offcanvas
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                    placement="end"
+                >
+                    <Offcanvas.Header closeButton>
+                        <Offcanvas.Title id="offcanvasNavbarLabel" className='px-2'>
+                            <Link to="/">
+                                <div style={{ width: '170px', height: 'auto' }}>
+                                    <img
+                                        src={require("../assets/images/Media (2).jpeg")}
+                                        className="img-fluid w-100 h-100 object-fit-cover"
+                                        alt="Logo"
+                                    />
+                                </div>
+                            </Link>
+                        </Offcanvas.Title>
+                    </Offcanvas.Header>
+                    <Offcanvas.Body className='px-3'>
+                        <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
+                            <NavLink
+                                to="/"
+                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu text-decoration-none"
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
+                                to="/about"
+                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu text-decoration-none"
+                            >
+                                About Us
+                            </NavLink>
+                            <NavLink
+                                to="/blog"
+                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu text-decoration-none"
+                            >
+                                Blog
+                            </NavLink>
+                        </Nav>
+                    </Offcanvas.Body>
+                </Navbar.Offcanvas>
+            </Navbar>
+        </div>
+    );
 }
 
 export default Header
