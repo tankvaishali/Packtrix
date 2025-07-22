@@ -8,7 +8,7 @@ function Header() {
                 <Navbar expand="lg" className="border border-dark">
                     <Container>
                         <Navbar.Brand href="#home">
-                            <div style={{ width: '120px', height: 'auto' }} className='border'>
+                            <div style={{ width: '140px', height: 'auto' }} className='border'>
                                 <img
                                     src={require("../assets/images/Media (2).jpeg")}
                                     className="img-fluid w-100 h-100 object-fit-cover"
@@ -24,7 +24,7 @@ function Header() {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id="offcanvasNavbarLabel">
-                                    <div style={{ width: '100px', height: 'auto' }}>
+                                    <div style={{ width: '120px', height: 'auto' }}>
                                         <img
                                             src={require("../assets/images/Media (2).jpeg")}
                                             className="img-fluid w-100 h-100 object-fit-cover"

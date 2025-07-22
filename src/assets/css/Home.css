@@ -81,14 +81,14 @@
 /* VideoEnergy end */
 
 /* IndustrySec start */
-/* .industries-section {
+.industries-section {
   width: 100%;
   height: auto;
   background-image: url("../images/bodyBGimg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-} */
+}
 .industry-box {
   background-color: whitesmoke;
   padding: 8px;
