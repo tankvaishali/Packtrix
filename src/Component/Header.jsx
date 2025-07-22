@@ -35,9 +35,9 @@ function Header() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
-                                    <Nav.Link href="#home" className="border px-3 py-2 fw-bold text-dark">Home</Nav.Link>
-                                    <Nav.Link href="#about" className="border px-3 py-2 fw-bold text-dark">About Us</Nav.Link>
-                                    <Nav.Link href="#blog" className="border px-3 py-2 fw-bold text-dark">Blog</Nav.Link>
+                                    <Nav.Link href="#home" className="border px-3 py-2 fw-bold rounded text-white navbar_menu">Home</Nav.Link>
+                                    <Nav.Link href="#about" className="border px-3 py-2 fw-bold rounded text-white navbar_menu">About Us</Nav.Link>
+                                    <Nav.Link href="#blog" className="border px-3 py-2 fw-bold rounded text-white navbar_menu">Blog</Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
