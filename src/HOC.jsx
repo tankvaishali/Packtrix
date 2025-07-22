@@ -7,7 +7,7 @@ function HOC(Component) {
             <>
                 <Header />
                 <Component />
-                <Footer/>
+                <Footer />
             </>
         );
     }
