@@ -39,19 +39,19 @@ function Header() {
                         <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
                             <NavLink
                                 to="/"
-                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu text-decoration-none"
+                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu rounded text-decoration-none"
                             >
                                 Home
                             </NavLink>
                             <NavLink
                                 to="/about"
-                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu text-decoration-none"
+                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu rounded text-decoration-none"
                             >
                                 About Us
                             </NavLink>
                             <NavLink
                                 to="/blog"
-                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu text-decoration-none"
+                                className="border text-center px-2 py-1 fw-bold text-white navbar_menu rounded text-decoration-none"
                             >
                                 Blog
                             </NavLink>

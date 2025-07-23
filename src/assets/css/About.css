@@ -1,0 +1,18 @@
+/* Aboutus start */
+.aboutus_bg{
+  width: 100%;
+  height: auto;
+  background-image: url("https://www.tharayilpower.com/static/media/testi_bg.f45dc51be227a3befcbe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.aboutus_content {
+  width: 75%;
+}
+@media (max-width: 576px) {
+  .aboutus_content {
+    width: 95% !important;
+  }
+}
+/* Aboutus end */
