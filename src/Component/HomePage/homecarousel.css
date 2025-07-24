@@ -1,0 +1,158 @@
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    /* border-radius: 20px; */
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+}
+
+/* Image Section (Vertical) */
+.image-section {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    right: -76px;
+    z-index: 0;
+    /* background: #d8c5ab; */
+    box-sizing: border-box;
+}
+
+.image-track {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.image-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+    flex-shrink: 0;
+}
+
+/* Content Section (Horizontal) */
+.content-section {
+    width: 50%;
+    height: 100%;
+    /* background: linear-gradient(135deg, #fdfbfb, #ebedee); */
+    overflow: hidden;
+    position: relative;
+}
+
+.content-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+}
+
+.content {
+    min-width: 100%;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.h1slide {
+    margin-left: -48px;
+}
+
+.content h2 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content p {
+    font-size: 15px;
+    color: #666;
+    position: relative;
+    left: 58px;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive for Tablets and Mobiles */
+
+@media (max-width: 992px) {
+    .carousel-container {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+    }
+
+    .image-section,
+    .content-section {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .image-track img {
+        border-right: none;
+        border-bottom: 3px solid #fff;
+    }
+
+    .image-section {
+        right: 0;
+    }
+
+    .content {
+        padding: 2rem 1.5rem;
+    }
+
+    .h1slide {
+        margin-left: 0;
+    }
+
+    .content p {
+        left: 0;
+    }
+}
+
+/* indicators */
+.arrow-controls {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.arrow-btn {
+    background: transparent;
+    color: black;
+    border: none;
+    width: 36px;
+    height: 36px;
+    font-size: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.arrow-btn:hover {
+    background: white;
+    color: #000;
+}
