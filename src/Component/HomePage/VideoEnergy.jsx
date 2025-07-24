@@ -13,8 +13,10 @@ function VideoEnergy() {
           </div>
           <div className="video-overlay-content-wrapper d-flex align-items-center justify-content-center w-100 h-100 text-white text-center p-4 p-md-5">
             <div className="video-overlay-content">
-              <h1 className=' text_video text-capitalize '>Empowering <span className='text-info'>Sustainability</span></h1>
-           
+              <h1 className='text_video text-capitalize' data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-once="true">Empowering <span className='text-info'>Sustainability</span></h1>
+
             </div>
           </div>
         </div>

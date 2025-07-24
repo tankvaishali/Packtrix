@@ -7,16 +7,20 @@ function Footer() {
     <>
       <div className="footerbg">
         <div className="container">
-          <div className="row w-75 mx-auto jusyify-content-center align-items-center pt-5">
+          <div className="row w-75 mx-auto jusyify-content-center align-items-center pt-5 overflow-hidden">
             <div className="col-12 col-lg-5 mb-4">
               <div className="h-100">
-                <div className='bg-white' style={{ width: "100%", height: "180px" }}>
+                <div className='bg-white' data-aos="fade-right"
+                  data-aos-duration="1500"
+                  data-aos-once="true" style={{ width: "100%", height: "180px" }}>
                   <img src={require("./assets/images/Media (2).jpeg")} alt="" className='img-fluid h-100 w-100 object-fit-contain' />
                 </div>
               </div>
             </div>
             <div className="col-12 col-lg-7">
-              <div className="h-100 text-white">
+              <div className="h-100 text-white" data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-once="true">
                 <div className='fw-medium pera'><span className='fs-5 fw-bold'>Address :</span> <Link to={""} className='text-decoration-none text-white'>3rd Floor, 94/ B, August Kranti Marg, <div>Altamount Road, surat - 395006.</div></Link></div>
                 <div className='fw-medium pera my-2'><span className='fs-5 fw-bold'>Call :</span> <Link to={"tel:+9196385 21470"} className='text-decoration-none text-white'>+(91) 96385 21470</Link></div>
                 <div className='fw-medium pera'><span className='fs-5 fw-bold'>E-mail :</span> <Link to={"mailto:packtrix2025@gmail.com"} target="_blank" className='text-decoration-none text-white'>packtrix2025@gmail.com</Link></div>

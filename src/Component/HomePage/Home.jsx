@@ -13,8 +13,12 @@ function Home() {
       <Sustainability />
       <VideoEnergy />
       <IndustrySec />
-      <div className='container p-0'>
-        <img src={require("../../assets/images/sustainable and recyclable  box.jpeg")} alt="" className='img-fuild w-100' height={"auto"} />
+      <div className='overflow-hidden'>
+        <div className='container p-0' data-aos="zoom-out"
+          data-aos-duration="1500"
+          data-aos-once="true">
+          <img src={require("../../assets/images/sustainable and recyclable  box.jpeg")} alt="" className='img-fuild w-100' height={"auto"} />
+        </div>
       </div>
     </div>
   );
