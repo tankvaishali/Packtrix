@@ -10,7 +10,7 @@ const blogData = [
     content: "Discover what sustainable packaging is, why it matters, and how Bambrew’s BioPhil plant‑based, compostable solutions help brands reduce waste and cut carbon."
   },
   {
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    image: "http://localhost:3000/static/media/printed%20corrugated%20box.24b02a40b586d7ad2bc8.png",
     date: "23-07-2025",
     title: "What is Kraft Paper: The 101 Guide",
     content: "Kraft paper is a powerhouse in the world of sustainable packaging—strong, versatile, and eco-friendly. This guide breaks down everything you need to know about kraft paper, from how it’s made to why it’s a go-to choice for eco-"
