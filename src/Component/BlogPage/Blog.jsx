@@ -23,22 +23,24 @@ function Blog() {
       <div className='row justify-content-center'>
         {blogData.map((blog, index) => (
           <div className='col-12 col-lg-6 col-md-6 p-3' key={index}>
-            <div className='blog-card h-100 overflow-hidden rounded-4 bg-white' data-aos="zoom-in"
+            <div data-aos="zoom-in"
               data-aos-duration="1500"
               data-aos-once="true"
               data-aos-delay={index * 250}>
-              <div className='blog-image position-relative'>
-                <img src={blog.image} className='img-fluid w-100' alt={blog.title} />
-                <div className='blog-date position-absolute text-white px-3 py-2 rounded fw-medium'>
-                  {blog.date}
+              <div className='blog-card h-100 overflow-hidden rounded-4 bg-white'>
+                <div className='blog-image position-relative'>
+                  <img src={blog.image} className='img-fluid w-100' alt={blog.title} />
+                  <div className='blog-date position-absolute text-white px-3 py-2 rounded fw-medium'>
+                    {blog.date}
+                  </div>
                 </div>
-              </div>
-              <div className='blog-content p-3'>
-                <div className='titlecolor fw-bold fs-5 mt-2 blog-title' style={{ wordBreak: "break-word" }}>
-                  {blog.title}
-                </div>
-                <div className='pera mt-2' style={{ textAlign: "justify" }}>
-                  {blog.content}
+                <div className='blog-content p-3'>
+                  <div className='titlecolor fw-bold fs-5 mt-2 blog-title' style={{ wordBreak: "break-word" }}>
+                    {blog.title}
+                  </div>
+                  <div className='pera mt-2' style={{ textAlign: "justify" }}>
+                    {blog.content}
+                  </div>
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@
   box-shadow: -10px -10px 0 #008a43;
 }
 .blog-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) !important;
   border: 2px groove #00bcd4;
 }
 .blog-image {
