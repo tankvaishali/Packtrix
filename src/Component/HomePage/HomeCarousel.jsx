@@ -2,17 +2,17 @@ import React, { useEffect, useRef, useState } from 'react'
 import '../HomePage/homecarousel.css'
 const slides = [
     {
-        image: 'https://mail.google.com/mail/u/0?ui=2&ik=f259dc9f2a&attid=0.3.0.1&permmsgid=msg-f:1837962379928285273&th=1981c10bee283059&view=att&disp=safe&realattid=f_md1op9pk0&zw',
+        image: require('../../assets/images/carouselimages/corrugated printed boxes.png'),
         title: 'Luxury Box Packaging',
         description: 'Elevate your brand with our exquisite luxury box packaging. Perfect for high-end products and special occasions.',
     },
     {
-        image: 'https://mail.google.com/mail/u/0?ui=2&ik=f259dc9f2a&attid=0.3.0.2&permmsgid=msg-f:1837962379928285273&th=1981c10bee283059&view=att&disp=safe&realattid=f_md1oy3b01&zw',
+        image: require('../../assets/images/carouselimages/corrugated sheets.png'),
         title: 'Eco-Friendly Pouches',
         description: 'Sustainable and customizable pouches made from recycled materials. Ideal for food, cosmetics, and more.',
     },
     {
-        image: 'https://mail.google.com/mail/u/0?ui=2&ik=f259dc9f2a&attid=0.3.0.3&permmsgid=msg-f:1837962379928285273&th=1981c10bee283059&view=att&disp=safe&realattid=f_md1p4ch82&zw',
+        image: require('../../assets/images/carouselimages/printed corrugated box.png'),
         title: 'Custom Printed Bags',
         description: 'Personalized bags to enhance brand visibility. Available in various sizes and materials with vibrant printing options.',
     },
