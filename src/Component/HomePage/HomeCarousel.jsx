@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import '../HomePage/homecarousel.css'
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 const slides = [
     {
         image: require('../../assets/images/carouselimages/corrugated printed boxes.png'),
@@ -18,40 +19,58 @@ const slides = [
     },
 ];
 // Clone first slide for infinite effect
-const loopSlides = [...slides, slides[0]];
+const loopSlides = [slides[slides.length - 1], ...slides, slides[0]];
 
 const HomeCarousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(1); // Start at the real first slide
     const [isTransitioning, setIsTransitioning] = useState(true);
-    const timeoutRef = useRef(null);
+    const intervalRef = useRef(null);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-        setIsTransitioning(true);
-    };
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => prevIndex - 1);
-        setIsTransitioning(true);
-    };
-
-    useEffect(() => {
-        timeoutRef.current = setInterval(nextSlide, 4000);
-        return () => clearInterval(timeoutRef.current);
-    }, []);
-
-    useEffect(() => {
-        if (currentIndex === loopSlides.length - 1) {
-            // Wait for transition then reset to 0 without animation
-            setTimeout(() => {
-                setIsTransitioning(false);
-                setCurrentIndex(0);
-            }, 1000); // Match CSS transition duration
+        if (currentIndex < loopSlides.length - 1) {
+            setCurrentIndex(prev => prev + 1);
         }
+    };
+
+    const prevSlide = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(prev => prev - 1);
+        }
+    };
+
+    // Auto slide
+    useEffect(() => {
+        intervalRef.current = setInterval(() => {
+            nextSlide();
+        }, 4000);
+        return () => clearInterval(intervalRef.current);
     }, [currentIndex]);
 
+    // Handle loop transitions
+    const handleTransitionEnd = () => {
+        if (currentIndex === loopSlides.length - 1) {
+            setIsTransitioning(false);
+            setCurrentIndex(1);
+        }
+        if (currentIndex === 0) {
+            setIsTransitioning(false);
+            setCurrentIndex(loopSlides.length - 2);
+        }
+    };
+
+    // Re-enable transition after jump
+    useEffect(() => {
+        if (!isTransitioning) {
+            const timeout = setTimeout(() => setIsTransitioning(true), 50);
+            return () => clearTimeout(timeout);
+        }
+    }, [isTransitioning]);
+
     return (
-        <div className="carousel-container container-xxl" style={{ backgroundImage: 'linear-gradient(70deg, #008a43, #00bcd4)' }}>
-            {/* Image Section - Vertical */}
+        <div className="carousel-container container-xxl w-100 min-vh-100 vh-100 d-flex align-items-center justify-content-center overflow-hidden"
+            style={{ backgroundImage: 'linear-gradient(70deg, #008a43, #00bcd4)' }}>
+
+            {/* Image Section */}
             <div className="image-section">
                 <div
                     className="image-track"
@@ -59,19 +78,24 @@ const HomeCarousel = () => {
                         transform: `translateY(-${currentIndex * 100}%)`,
                         transition: isTransitioning ? 'transform 1s ease-in-out' : 'none',
                     }}
+                    onTransitionEnd={handleTransitionEnd}
                 >
                     {loopSlides.map((slide, index) => (
-                        <img key={index} src={slide.image} alt={`Slide ${index}`} className='' style={{ borderRadius: '0% 0% 44% 0% / 0% 35% 100% 0% ' }} />
+                        <img key={index} src={slide.image} alt={`Slide ${index}`} className='slideimage' />
                     ))}
                 </div>
-                <div className="arrow-controls">
-                    <button onClick={prevSlide} className="arrow-btn">&#8592;</button>
-                    <button onClick={nextSlide} className="arrow-btn">&#8594;</button>
-                </div>
 
+                <div className="p-3 arrow-controls">
+                    <button className="bubbles arrow-btn px-3 bg-dark" onClick={prevSlide}>
+                        <span className="text" style={{ top: "-7px" }}><BsArrowLeft size={24} /></span>
+                    </button>
+                    <button className="bubbles arrow-btn px-3 bg-dark" onClick={nextSlide}>
+                        <span className="text" style={{ top: "-7px" }}><BsArrowRight size={24} /></span>
+                    </button>
+                </div>
             </div>
 
-            {/* Content Section - Horizontal */}
+            {/* Content Section */}
             <div className="content-section">
                 <div
                     className="content-track"
@@ -81,8 +105,8 @@ const HomeCarousel = () => {
                     }}
                 >
                     {loopSlides.map((slide, index) => (
-                        <div className="content" key={index}>
-                            <h1 className='display-1 fw-semibold h1slide'>{slide.title}</h1>
+                        <div className="content py-0" key={index}>
+                            <h1 className='display-1 fw-semibold h1slide text-dark text-opacity-75' style={{ textShadow: "2px 2px 1px transparent" }}>{slide.title}</h1>
                             <p>{slide.description}</p>
                         </div>
                     ))}
@@ -91,5 +115,6 @@ const HomeCarousel = () => {
         </div>
     );
 };
+
 
 export default HomeCarousel;
