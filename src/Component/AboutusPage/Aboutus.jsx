@@ -31,10 +31,16 @@ function Aboutus() {
               data-aos-duration="1500"
               data-aos-once="true">Our Mission</h2>
             <p className="pera aboutus_content mx-auto mt-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores, aliquam recusandae corrupti totam repellendus rerum omnis quam autem odit earum exercitationem veniam quod esse adipisci perferendis? Tempora voluptas sed soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores.
+              To deliver sustainable, high-quality corrugated packaging solutions that are fully recyclable, customizable, and designed to meet the unique needs of every brand—while minimizing environmental impact and maximizing customer satisfaction.
             </p>
-            <p className="pera aboutus_content mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores, aliquam recusandae corrupti totam repellendus rerum omnis quam autem odit earum exercitationem veniam quod esse adipisci perferendis? Tempora voluptas sed soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores.
+          </div>
+
+          <div className="aboutus_content mx-auto text-center">
+            <h2 className="mt-2 fw-bold titlecolor" data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-once="true">Our Vision</h2>
+            <p className="pera aboutus_content mx-auto mt-1">
+              To become the most trusted partner in green packaging, transforming the industry with innovative, recyclable designs that protect products, elevate brands, and preserve the planet.
             </p>
           </div>
 
@@ -61,7 +67,7 @@ function Aboutus() {
             />
           </div>
 
-          <div className="aboutus_content mx-auto text-center pb-4">
+          <div className="aboutus_content mx-auto text-center">
             <h2 className="mt-4 fw-bold titlecolor" data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-once="true">Why does it matter?</h2>
@@ -72,6 +78,22 @@ function Aboutus() {
               At our company, we believe in transparency and open communication with our customers. We are committed to providing the highest level of customer service and support, and we are always willing to work with our customers to find the best sustainable packaging solutions for their needs.
             </p>
           </div>
+
+          <div className='aboutus_content mx-auto text-center pb-4'>
+            <h2 className="mt-2 fw-bold titlecolor" data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-once="true">Meet Paktrix
+            </h2>
+            <div style={{ width: "200px" }} className='mx-auto'>
+              <img
+                src={require("../../assets/images/Meet paktrix logo.png")}
+                alt=""
+                className="img-fluid w-100 object-fit-cover"
+                style={{ objectPosition: 'bottom center' }}
+              />
+            </div>
+          </div>
+
         </div>
       </div>
     </>

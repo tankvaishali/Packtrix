@@ -1,10 +1,11 @@
 /* Sustainability Section Background */
 .sustainability_bg {
-  background-image: url("https://img.freepik.com/premium-photo/monstera-leaf-swiss-cheese-leaf-corner-white-background_926199-1982255.jpg?w=360");
+  background-image: url("https://nanakpropack-alpha.vercel.app/static/media/testimonialBG1.d9ce347fa76627b6c066.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 41, 0, 0.589);
+  /* box-shadow: inset 0px 0px 1500px 1000px rgba(0, 41, 0, 0.589); */
+  box-shadow: inset 0 0 1500px 1000px rgba(0, 0, 0, 0.829);
 }
 .card_width {
   width: 75%;
