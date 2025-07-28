@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 function Header() {
     return (
         <div className="">
-            <Navbar expand="lg" className="bg-white px-3 px-lg-4 shadow">
+            <Navbar expand="lg" className="bg-white px-3 px-lg-4">
                 <Navbar.Brand as={Link} to="/">
                     <div style={{ width: '170px', height: 'auto' }}>
                         <img

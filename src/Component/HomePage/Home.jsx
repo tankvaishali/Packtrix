@@ -6,11 +6,13 @@ import VideoEnergy from './VideoEnergy';
 import IndustrySec from './IndustrySec';
 import HOC from '../../HOC';
 import HomeCarousel from './HomeCarousel';
+import HomeSlider from './HomeSlider';
 
 function Home() {
   return (
     <div>
-      <HomeCarousel />
+      {/* <HomeCarousel /> */}
+      <HomeSlider />
       <HomeAbout />
       <Sustainability />
       <VideoEnergy />
