@@ -16,6 +16,11 @@ const slides = [
         image: require("../../assets/images/carouselimages/printed corrugated box.png"),
         title: "Multi Colour Corrugated Packaging",
         tagline: "Custom style, corrugated strength"
+    },
+    {
+        image: require("../../assets/images/carouselimages/corrugated_pizza_printed_boxes-removebg-preview.6b3fc31b75aec1a4beec.jpg"),
+        title: "Custom Food Packaging",
+        tagline: "Designed to impress,built to protect"
     }
 ];
 
