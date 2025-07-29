@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function HomeAbout() {
   return (
     <div className="container">
-      <div className="row d-flex align-items-center mt-5">
+      <div className="row d-flex align-items-center mt-5 bg-white">
         <div className="col-12 col-lg-8 px-3 px-lg-0">
           <div className="h-100">
             <h1 className="titlecolor" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Meet Paktrix : Lorem ipsum</h1>

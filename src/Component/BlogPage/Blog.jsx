@@ -20,7 +20,7 @@ const blogData = [
 function Blog() {
   return (
     <div className='container mt-3 mb-4'>
-      <div className='row justify-content-center'>
+      <div className='row justify-content-center bg-white'>
         {blogData.map((blog, index) => (
           <div className='col-12 col-lg-6 col-md-6 p-3' key={index}>
             <div data-aos="zoom-in"
