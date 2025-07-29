@@ -5,6 +5,7 @@ import Aboutus from './Component/AboutusPage/Aboutus';
 import Blog from './Component/BlogPage/Blog';
 import Aos from 'aos';
 import { useEffect } from 'react';
+import ScrollToTop from './Component/ScrollToTop';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<Aboutus />} />

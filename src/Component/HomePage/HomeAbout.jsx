@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomeAbout() {
   return (
@@ -16,9 +17,11 @@ function HomeAbout() {
             <div className='pera pe-lg-5 pe-0' style={{ textAlign: "justify" }}>
               We specialize in eco-friendly, fully recyclable corrugated solutions that are not only built to last, but designed to reflect your brand’s unique identity. With a passion for customization and a commitment to green practices, we empower businesses—big and small—to ship smarter, greener, and more beautifully.
             </div>
-            <button class="bubbles p-1 px-4 mt-3">
-              <span class="text">About Us</span>
-            </button>
+            <Link to={"/about"}>
+              <button class="bubbles p-1 px-4 mt-3">
+                <span class="text">About Us</span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="col-12 col-lg-4 overflow-hidden">
