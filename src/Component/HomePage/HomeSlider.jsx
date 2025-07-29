@@ -3,24 +3,24 @@ import '../HomePage/HomeSlider.css';
 
 const slides = [
     {
-        image: require("../../assets/images/carouselimages/Corrugated Printed box.png"),
+        image: require("../../assets/images/carouselimages/corrugated-printed-box.png"),
         title: "Corrugated\nFlexo Printed\nBox",
         tagline: "Secure, simple and sustainable"
     },
     {
-        image: require("../../assets/images/carouselimages/Corrugated sheets.png"),
+        image: require("../../assets/images/carouselimages/corrugated-sheets.png"),
         title: "Corrugated Separators",
         tagline: "Packaging that protects"
     },
     {
-        image: require("../../assets/images/carouselimages/Printed Corrugated box.png"),
+        image: require("../../assets/images/carouselimages/printed-corrugated-box.png"),
         title: "Multi Colour Corrugated Packaging",
         tagline: "Custom style, corrugated strength"
     },
     {
-        image: require("../../assets/images/carouselimages/Pizza Box.jpg"),
+        image: require("../../assets/images/carouselimages/pizza-box.jpg"),
         title: "Custom Food Packaging",
-        tagline: "Designed to impress,built to protect"
+        tagline: "Designed to impress, built to protect"
     }
 ];
 
