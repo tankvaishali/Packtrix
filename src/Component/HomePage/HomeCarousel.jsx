@@ -3,20 +3,25 @@
 // import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 // const slides = [
 //     {
-//         image: require('../../assets/images/carouselimages/corrugated printed boxes.png'),
-//         title: 'Luxury Box Packaging',
-//         description: 'Elevate your brand with our exquisite luxury box packaging. Perfect for high-end products and special occasions.',
+//         image: require("../../assets/images/carouselimages/Corrugated Printed box.png"),
+//         title: "Corrugated\nFlexo Printed\nBox",
+//         description: "Secure, simple and sustainable"
 //     },
 //     {
-//         image: require('../../assets/images/carouselimages/corrugated sheets.png'),
-//         title: 'Eco-Friendly Pouches',
-//         description: 'Sustainable and customizable pouches made from recycled materials. Ideal for food, cosmetics, and more.',
+//         image: require("../../assets/images/carouselimages/Corrugated sheets.png"),
+//         title: "Corrugated Separators",
+//         description: "Packaging that protects"
 //     },
 //     {
-//         image: require('../../assets/images/carouselimages/printed corrugated box.png'),
-//         title: 'Custom Printed Bags',
-//         description: 'Personalized bags to enhance brand visibility. Available in various sizes and materials with vibrant printing options.',
+//         image: require("../../assets/images/carouselimages/Printed Corrugated box.png"),
+//         title: "Multi Colour Corrugated Packaging",
+//         description: "Custom style, corrugated strength"
 //     },
+//     {
+//         image: require("../../assets/images/carouselimages/Pizza Box.jpg"),
+//         title: "Custom Food Packaging",
+//         description: "Designed to impress,built to protect"
+//     }
 // ];
 // // Clone first slide for infinite effect
 // const loopSlides = [slides[slides.length - 1], ...slides, slides[0]];
