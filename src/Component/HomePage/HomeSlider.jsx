@@ -8,7 +8,8 @@ const slides = [
         tagline: "Secure, simple and sustainable"
     },
     {
-        image: require("../../assets/images/carouselimages/Corrugated Printed box.png"),
+        // image: require("../../assets/images/carouselimages/Corrugated sheets.png"),
+        image: require("../../assets/images/carouselimages/Printed Corrugated box.png"),
         title: "Corrugated Separators",
         tagline: "Packaging that protects"
     },

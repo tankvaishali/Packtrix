@@ -5,7 +5,7 @@ import "../../assets/css/Home.css"
 import VideoEnergy from './VideoEnergy';
 import IndustrySec from './IndustrySec';
 import HOC from '../../HOC';
-import HomeCarousel from './HomeCarousel';
+// import HomeCarousel from './HomeCarousel';
 import HomeSlider from './HomeSlider';
 
 function Home() {
