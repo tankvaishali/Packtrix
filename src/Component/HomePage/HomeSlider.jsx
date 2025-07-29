@@ -1,36 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../HomePage/HomeSlider.css';
 
-// const slides = [
-//     {
-//         image: require("../../assets/images/carouselimages/Corrugated Printed box.png"),
-//         title: "Corrugated\nFlexo Printed\nBox",
-//         tagline: "Secure, simple and sustainable"
-//     },
-//     {
-//         // image: require("../../assets/images/carouselimages/Corrugated sheets.png"),
-//         image: require("../../assets/images/carouselimages/Printed Corrugated box.png"),
-//         title: "Corrugated Separators",
-//         tagline: "Packaging that protects"
-//     },
-//     {
-//         image: require("../../assets/images/carouselimages/Printed Corrugated box.png"),
-//         title: "Multi Colour Corrugated Packaging",
-//         tagline: "Custom style, corrugated strength"
-//     },
-//     {
-//         image: require("../../assets/images/carouselimages/Pizza Box.jpg"),
-//         title: "Custom Food Packaging",
-//         tagline: "Designed to impress,built to protect"
-//     }
-// ];
-
 function HomeSlider() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fade, setFade] = useState(true);
     const timeoutRef = useRef(null);
-    const slides = [0, 1, 2, 3, 4]
+    // const slides = [0, 1, 2, 3, 4]
     useEffect(() => {
         setFade(true);
         timeoutRef.current = setTimeout(() => {
@@ -48,39 +24,13 @@ function HomeSlider() {
     const currentSlide = slides[currentIndex];
 
     return (
-        // <div className='container mb-5 mt-4'>
-        //     <div className='homeslider_bg p-4 p-lg-5 rounded-4'>
-        //         <div className='row align-items-center gy-4'>
-        //             <div className='col-12 col-lg-6 d-flex justify-content-center'>
-        //                 <div className={`image-glow ${fade ? 'fade-in' : 'fade-out'}`}>
-        //                     <img
-        //                         src={currentSlide.image}
-        //                         className='img-fluid w-100 h-100 object-fit-cover rounded-4'
-        //                         alt="Slide"
-        //                     />
-        //                 </div>
-        //             </div>
-        //             <div className='col-12 col-lg-6 text-white text-center text-lg-start'>
-        //                 <div className={`text-slide ${fade ? 'fade-in-left' : 'fade-out-left'}`}>
-        //                     <h1 className='title-glow mb-3'>
-        //                         {currentSlide.title.split('\n').map((line, i) => (
-        //                             <div key={i}>{line}</div>
-        //                         ))}
-        //                     </h1>
-        //                     <p className='tagline text-uppercase'>{currentSlide.tagline}</p>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
-
         <div className='container mb-5 mt-4'>
             <div className='homeslider_bg p-4 p-lg-5 rounded-4'>
                 <div className='row align-items-center gy-4'>
                     <div className='col-12 col-lg-6 d-flex justify-content-center'>
                         <div className={`image-glow ${fade ? 'fade-in' : 'fade-out'}`}>
                             <img
-                                src={require("../../assets/images/carouselimages/Corrugated Printed box.png")}
+                                src={currentSlide.image}
                                 className='img-fluid w-100 h-100 object-fit-cover rounded-4'
                                 alt="Slide"
                             />
@@ -89,18 +39,67 @@ function HomeSlider() {
                     <div className='col-12 col-lg-6 text-white text-center text-lg-start'>
                         <div className={`text-slide ${fade ? 'fade-in-left' : 'fade-out-left'}`}>
                             <h1 className='title-glow mb-3'>
-                                {/* {currentSlide.title.split('\n').map((line, i) => (
+                                {currentSlide.title.split('\n').map((line, i) => (
                                     <div key={i}>{line}</div>
-                                    ))} */}
-                                <div>Custom Food Packaging</div>
+                                ))}
                             </h1>
-                            <p className='tagline text-uppercase'>Designed to impress,built to protect</p>
+                            <p className='tagline text-uppercase'>{currentSlide.tagline}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        // <div className='container mb-5 mt-4'>
+        //     <div className='homeslider_bg p-4 p-lg-5 rounded-4'>
+        //         <div className='row align-items-center gy-4'>
+        //             <div className='col-12 col-lg-6 d-flex justify-content-center'>
+        //                 <div className={`image-glow ${fade ? 'fade-in' : 'fade-out'}`}>
+        //                     <img
+        //                         src={require("../../assets/images/carouselimages/Corrugated Printed box.png")}
+        //                         className='img-fluid w-100 h-100 object-fit-cover rounded-4'
+        //                         alt="Slide"
+        //                     />
+        //                 </div>
+        //             </div>
+        //             <div className='col-12 col-lg-6 text-white text-center text-lg-start'>
+        //                 <div className={`text-slide ${fade ? 'fade-in-left' : 'fade-out-left'}`}>
+        //                     <h1 className='title-glow mb-3'>
+        //                         {/* {currentSlide.title.split('\n').map((line, i) => (
+        //                             <div key={i}>{line}</div>
+        //                             ))} */}
+        //                         <div>Custom Food Packaging</div>
+        //                     </h1>
+        //                     <p className='tagline text-uppercase'>Designed to impress,built to protect</p>
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div>
     );
 }
 
+
+const slides = [
+    {
+        image: require("../../assets/images/carouselimages/Corrugated Printed box.png"),
+        title: "Corrugated\nFlexo Printed\nBox",
+        tagline: "Secure, simple and sustainable"
+    },
+    {
+        image: require("../../assets/images/carouselimages/Corrugated sheets.png"),
+        title: "Corrugated Separators",
+        tagline: "Packaging that protects"
+    },
+    {
+        image: require("../../assets/images/carouselimages/Printed Corrugated box.png"),
+        title: "Multi Colour Corrugated Packaging",
+        tagline: "Custom style, corrugated strength"
+    },
+    {
+        image: require("../../assets/images/carouselimages/Pizza Box.jpg"),
+        title: "Custom Food Packaging",
+        tagline: "Designed to impress,built to protect"
+    }
+];
 export default HomeSlider
