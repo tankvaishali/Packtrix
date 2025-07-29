@@ -21,7 +21,7 @@ function Sustainability() {
         </h1>
       </div>
 
-      <div className="container w-75 card_width">
+      <div className="container card_width">
         <div className="row g-3 justify-content-center">
           {data.map((item, index) => (
             <div className="col-6 col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in"

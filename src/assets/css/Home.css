@@ -10,6 +10,11 @@
 .card_width {
   width: 75%;
 }
+@media (max-width: 576px) {
+  .card_width {
+    width: 100% !important;
+  }
+}
 .sustainability-card {
   background-color: rgba(0, 81, 128, 0.664);
   border: 4px solid white;
@@ -34,7 +39,7 @@
 }
 
 /* VideoEnergy start */
-.mainvideo {
+/* .mainvideo {
   position: relative;
   width: 100%;
   height: 300px;
@@ -74,6 +79,33 @@
   }
   .card_width {
     width: 100% !important;
+  }
+  .mainvideo {
+    height: 240px;
+  }
+} */
+.mainvideo {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("https://nanakpropack-alpha.vercel.app/static/media/HomeContactBG.3a42f8935e0a8323a400.avif");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 1500px 400px rgba(0, 0, 0, 0.578);
+}
+.video-overlay-content-wrapper {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.text_video {
+  font-size: 70px !important;
+  font-weight: 900 !important;
+}
+@media screen and (max-width: 768px) {
+  .text_video {
+    font-size: 50px !important;
   }
   .mainvideo {
     height: 240px;

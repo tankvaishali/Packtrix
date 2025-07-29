@@ -10,7 +10,7 @@ const blogData = [
     content: "Discover what sustainable packaging is, why it matters, and how Bambrew’s BioPhil plant‑based, compostable solutions help brands reduce waste and cut carbon."
   },
   {
-    image: "http://localhost:3000/static/media/printed%20corrugated%20box.24b02a40b586d7ad2bc8.png",
+    image: "https://static.wixstatic.com/media/df52bc_3340ab833b87436d870b00fa49919265~mv2.jpeg/v1/fill/w_981,h_736,fp_0.50_0.50,q_90,enc_avif,quality_auto/df52bc_3340ab833b87436d870b00fa49919265~mv2.jpeg",
     date: "23-07-2025",
     title: "What is Kraft Paper: The 101 Guide",
     content: "Kraft paper is a powerhouse in the world of sustainable packaging—strong, versatile, and eco-friendly. This guide breaks down everything you need to know about kraft paper, from how it’s made to why it’s a go-to choice for eco-"
@@ -19,7 +19,7 @@ const blogData = [
 
 function Blog() {
   return (
-    <div className='container mt-5 mb-4'>
+    <div className='container mt-3 mb-4'>
       <div className='row justify-content-center'>
         {blogData.map((blog, index) => (
           <div className='col-12 col-lg-6 col-md-6 p-3' key={index}>

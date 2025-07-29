@@ -1,4 +1,5 @@
 .homeslider_bg {
+  height: auto !important;
   background: linear-gradient(140deg, #005a3c 40%, #009688 60%);
   padding: 2rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -38,7 +39,15 @@
   margin-top: 0.5rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 991px) {
+  .homeslider_bg {
+    height: 755px !important;
+  }
+}
 @media (max-width: 768px) {
+  .homeslider_bg {
+    height: 555px !important;
+  }
   .image-glow {
     height: 300px;
   }
@@ -48,6 +57,11 @@
   }
   .tagline {
     font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .homeslider_bg {
+    height: 575px !important;
   }
 }
 .fade-in {

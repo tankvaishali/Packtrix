@@ -3,28 +3,29 @@ import '../HomePage/HomeSlider.css';
 
 const slides = [
     {
-        image: require("../../assets/images/carouselimages/corrugated printed boxes.png"),
+        image: require("../../assets/images/carouselimages/Corrugated Printed box.png"),
         title: "Corrugated\nFlexo Printed\nBox",
         tagline: "Secure, simple and sustainable"
     },
     {
-        image: require("../../assets/images/carouselimages/corrugated sheets.png"),
+        image: require("../../assets/images/carouselimages/Corrugated sheets.png"),
         title: "Corrugated Separators",
         tagline: "Packaging that protects"
     },
     {
-        image: require("../../assets/images/carouselimages/printed corrugated box.png"),
+        image: require("../../assets/images/carouselimages/Printed Corrugated box.png"),
         title: "Multi Colour Corrugated Packaging",
         tagline: "Custom style, corrugated strength"
     },
     {
-        image: require("../../assets/images/carouselimages/corrugated_pizza_printed_boxes-removebg-preview.6b3fc31b75aec1a4beec.jpg"),
+        image: require("../../assets/images/carouselimages/Pizza Box.jpg"),
         title: "Custom Food Packaging",
         tagline: "Designed to impress,built to protect"
     }
 ];
 
 function HomeSlider() {
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fade, setFade] = useState(true);
     const timeoutRef = useRef(null);
