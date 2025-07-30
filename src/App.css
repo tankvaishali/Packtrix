@@ -14,6 +14,19 @@
   display: inline-block;
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 3px 3px 10px 10px rgba(128, 128, 128, 0.308);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #008a43;
+  border-radius: 10px;
+}
+
 /* button hover start */
 /* From Uiverse.io by nikk7007 */
 .bubbles {
@@ -107,14 +120,6 @@
   transition: all 0.5s ease-in-out;
   z-index: 0;
 }
-.navbar_menu:hover::before {
-  left: 120%;
-}
-.navbar_menu:hover {
-  transform: scale(0.9);
-  /* box-shadow: 0 10px 20px rgba(0, 188, 212, 0.5), 0 0 15px rgba(0, 138, 67, 0.7); */
-  border-color: rgba(255, 255, 255, 0.3);
-}
 .gradient-border {
   position: relative;
   padding-bottom: 10px;
@@ -127,6 +132,17 @@
   height: 3px;
   width: 100%;
   background: linear-gradient(70deg, #008a43, #00bcd4);
+}
+.navbar_menu.active,
+.navbar_menu:hover,
+.navbar_menu.active:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: -3px -3px 0 #008a43;
+}
+.navbar_menu.active::before,
+.navbar_menu:hover::before,
+.navbar_menu.active:hover::before {
+  left: 120%;
 }
 /* Header end */
 
