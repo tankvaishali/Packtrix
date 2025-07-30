@@ -190,4 +190,12 @@
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
+.footer_width {
+  width: 75%;
+}
+@media (max-width: 576px) {
+  .footer_width {
+    width: 100% !important;
+  }
+}
 /* footer end */

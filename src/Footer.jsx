@@ -7,7 +7,7 @@ function Footer() {
     <>
       <div className="footerbg">
         <div className="container">
-          <div className="row w-75 mx-auto jusyify-content-center align-items-center pt-5 overflow-hidden">
+          <div className="footer_width row mx-auto jusyify-content-center align-items-center pt-5 overflow-hidden">
             <div className="col-12 col-lg-5 mb-4">
               <div className="h-100">
                 <div className='bg-white' data-aos="fade-right"
