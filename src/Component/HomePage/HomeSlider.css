@@ -54,6 +54,7 @@
   .title-glow {
     font-size: 40px;
     -webkit-text-stroke: 1px white;
+    background-color: grey !important;
   }
   .tagline {
     font-size: 1rem;
