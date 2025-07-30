@@ -24,10 +24,10 @@ function HomeAbout() {
             </Link>
           </div>
         </div>
-        <div className="col-12 col-lg-4 overflow-hidden">
+        <div className="col-12 col-lg-4 overflow-hidden bg-white">
           <div className="h-100">
             <div className='text-center ms-auto' data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
-              <img src={require("../../assets/images/earth image 2 copy.png")} alt="" className='img-fluid w-100 h-100' />
+              <img src={require("../../assets/images/earth_image_2_copy.png")} alt="" className='img-fluid w-100 h-100' />
             </div>
           </div>
         </div>
