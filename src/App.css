@@ -148,7 +148,8 @@
 
 /* footer start */
 .footerbg {
-  background: linear-gradient(90deg, #008a43, #00bcd4);
+  /* background: linear-gradient(90deg, #008a43, #00bcd4); */
+  background-color: #005a3c;
 }
 .footericon {
   transition: all 0.3s ease-in-out;

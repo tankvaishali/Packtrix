@@ -56,9 +56,9 @@ function Footer() {
               </div>
             </div>
           </div>
-          <hr className='border border-dark' />
+          <hr className='border border-white' />
           <div className='pera text-white fw-medium text-center pb-3'>
-            © 2025 by paktrix.in
+            © 2025 by paktrix.com
           </div>
         </div>
       </div>

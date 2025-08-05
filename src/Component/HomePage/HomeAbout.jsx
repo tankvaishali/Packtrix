@@ -5,9 +5,9 @@ function HomeAbout() {
   return (
     <div className="container">
       <div className="row d-flex align-items-center mt-5 bg-white">
-        <div className="col-12 col-lg-8 px-3 px-lg-0">
+        <div className="col-12 col-lg-8 px-3 px-lg-0 order-2 order-lg-1 mb-3">
           <div className="h-100">
-            <h1 className="titlecolor" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Meet Paktrix : Lorem ipsum</h1>
+            <h1 className="titlecolor" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Meet Paktrix</h1>
             <div className='pera pe-lg-5 pe-0 mt-1' style={{ textAlign: "justify" }}>
               In a world where packaging was once just an afterthought, a woman with vision, grit, and purpose saw an opportunity to reimagine the box—not just as a container, but as a canvas for brands and a commitment to the planet.
             </div>
@@ -24,7 +24,7 @@ function HomeAbout() {
             </Link>
           </div>
         </div>
-        <div className="col-12 col-lg-4 overflow-hidden bg-white">
+        <div className="col-12 col-lg-4 overflow-hidden bg-white order-1 order-lg-2 mb-3">
           <div className="h-100">
             <div className='text-center ms-auto' data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <img src={require("../../assets/images/earth_image_2_copy.png")} alt="" className='img-fluid w-100 h-100' />

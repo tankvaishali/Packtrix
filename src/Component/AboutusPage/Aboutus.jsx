@@ -72,7 +72,7 @@ function Aboutus() {
             </p>
           </div>
 
-          <div className="aboutus_content mx-auto text-center">
+          {/* <div className="aboutus_content mx-auto text-center">
             <h2 className="mt-2 fw-bold titlecolor" data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-once="true">Dreamers. Innovators. Creators.</h2>
@@ -82,9 +82,9 @@ function Aboutus() {
             <p className="pera aboutus_content mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores, aliquam recusandae corrupti totam repellendus rerum omnis quam autem odit earum exercitationem veniam quod esse adipisci perferendis? Tempora voluptas sed soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores.
             </p>
-          </div>
+          </div> */}
 
-          <div className="text-center mt-4 mx-auto" data-aos="zoom-in"
+          {/* <div className="text-center mt-4 mx-auto" data-aos="zoom-in"
             data-aos-duration="1500"
             data-aos-once="true">
             <img
@@ -92,10 +92,10 @@ function Aboutus() {
               alt=""
               className="img-fluid object-fit-cover aboutus_content about_image"
             />
-          </div>
+          </div> */}
 
           <div className="aboutus_content mx-auto text-center">
-            <h2 className="mt-4 fw-bold titlecolor" data-aos="fade-up"
+            <h2 className="mt-2 fw-bold titlecolor" data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-once="true">Why does it matter?</h2>
             <p className="pera aboutus_content mx-auto mt-1">

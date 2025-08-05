@@ -14,15 +14,15 @@ function Home() {
       {/* <HomeCarousel /> */}
       <HomeSlider />
       <HomeAbout />
-      <Sustainability />
-      <VideoEnergy />
-      <div className='overflow-hidden'>
+      {/* <Sustainability /> */}
+      <div className='overflow-hidden mt-2 mb-4'>
         <div className='container p-0' data-aos="zoom-out"
           data-aos-duration="1500"
           data-aos-once="true">
           <img src={require("../../assets/images/sustainable and recyclable  box.jpeg")} alt="" className='img-fuild w-100' height={"auto"} />
         </div>
       </div>
+      <VideoEnergy />
       <IndustrySec />
     </div>
   );
