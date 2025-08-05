@@ -5,7 +5,7 @@ import "../../assets/css/About.css";
 function Aboutus() {
   return (
     <>
-      <div className='aboutus_bg'>
+      <div className='aboutus_bg'> 
         <div className="container text-center pt-4">
           <div className="abou_image text-center" data-aos="zoom-in"
             data-aos-duration="1500"
