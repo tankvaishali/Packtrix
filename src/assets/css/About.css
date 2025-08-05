@@ -9,11 +9,29 @@
 }
 .aboutus_content {
   width: 75%;
-  height: auto;
 }
-@media (max-width: 576px) {
+.about_image {
+  width: 50%;
+  height: 450px;
+  outline: 2px groove gray;
+  outline-offset: 5px;
+}
+@media (max-width: 992px) {
+  .aboutus_content {
+    width: 90% !important;
+  }
+  .about_image {
+    width: 80% !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 768px) {
   .aboutus_content {
     width: 95% !important;
+  }
+  .about_image {
+    width: 95% !important;
+    height: auto !important;
   }
 }
 /* Aboutus end */

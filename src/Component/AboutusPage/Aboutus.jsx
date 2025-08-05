@@ -13,7 +13,7 @@ function Aboutus() {
             <img
               src={require('../../assets/images/Packtrix box packing factory image.png')}
               alt=""
-              className="img-fluid aboutus_content"
+              className="img-fluid aboutus_content about_image"
             />
           </div>
 
@@ -84,14 +84,13 @@ function Aboutus() {
             </p>
           </div>
 
-          <div className="text-center mt-4 aboutus_content mx-auto" data-aos="zoom-in"
+          <div className="text-center mt-4 mx-auto" data-aos="zoom-in"
             data-aos-duration="1500"
             data-aos-once="true">
             <img
               src="https://www.shutterstock.com/image-photo/small-trees-green-leaves-grow-600nw-1722922765.jpg"
               alt=""
-              className="img-fluid w-100 object-fit-cover"
-              style={{ objectPosition: 'bottom center' }}
+              className="img-fluid object-fit-cover aboutus_content about_image"
             />
           </div>
 
