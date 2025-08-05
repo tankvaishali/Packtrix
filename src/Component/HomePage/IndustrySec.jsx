@@ -63,7 +63,7 @@ function IndustrySec() {
                                 data-aos-delay={index * 200}>
                                 <div className="industry-box shadow h-100 py-3 py-lg-4" >
                                     <div className="industry-icon">{industry.icon}</div>
-                                    <h3 className="industry-name">{industry.title}</h3>
+                                    <h3 className="industry-name pera">{industry.title}</h3>
                                 </div>
                             </div>
                         ))}
