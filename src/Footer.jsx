@@ -8,7 +8,7 @@ function Footer() {
       <div className="footerbg">
         <div className="container">
           <div className="footer_width row mx-auto jusyify-content-center align-items-center pt-5 overflow-hidden">
-            <div className="col-12 col-lg-5 mb-4">
+            <div className="col-12 col-lg-6 mb-4">
               <div className="h-100">
                 <div className='bg-white' data-aos="fade-right"
                   data-aos-duration="1500"
@@ -17,7 +17,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-7">
+            <div className="col-12 col-lg-6">
               <div className="h-100 text-white" data-aos="fade-left"
                 data-aos-duration="1500"
                 data-aos-once="true">
