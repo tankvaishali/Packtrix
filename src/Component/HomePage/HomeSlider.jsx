@@ -47,7 +47,7 @@ function HomeSlider() {
     const currentSlide = slides[currentIndex];
 
     return (
-        <div className='container mb-5 mt-4'>
+        <div className='container mb-5 mt-4 mt-lg-5'>
             <div className='homeslider_bg p-4 p-lg-5 rounded-4'>
                 <div className='row align-items-center gy-4'>
                     <div className='col-12 col-lg-6 d-flex justify-content-center'>
