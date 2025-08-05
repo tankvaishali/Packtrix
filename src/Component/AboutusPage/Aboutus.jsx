@@ -11,7 +11,7 @@ function Aboutus() {
             data-aos-duration="1500"
             data-aos-once="true">
             <img
-              src="https://static.wixstatic.com/media/df52bc_35532c34ac314815a6ae769a3f37d4e1~mv2.jpg/v1/fill/w_720,h_337,al_c,lg_1,q_80,enc_avif,quality_auto/Gallery%20600X308_2.jpg"
+              src={require('../../assets/images/Packtrix box packing factory image.png')}
               alt=""
               className="img-fluid aboutus_content"
             />
@@ -22,7 +22,35 @@ function Aboutus() {
               data-aos-duration="1500"
               data-aos-once="true">About Us</h2>
             <p className="pera aboutus_content mx-auto mt-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores, aliquam recusandae corrupti totam repellendus rerum omnis quam autem odit earum exercitationem veniam quod esse adipisci perferendis? Tempora voluptas sed soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati aliquid eaque quidem et incidunt ipsam quasi consequatur dolores, aliquam recusandae corrupti totam repellendus rerum omnis quam autem odit earum exercitationem veniam quod esse adipisci perferendis? Tempora voluptas sed soluta.
+              With over 15 years of experience in the packaging industry, we at PAKTRIX have built a
+              trusted reputation as both manufacturers and traders of high-quality corrugated boxes.
+              Our journey has been driven by a commitment to excellence, reliability, and innovation,
+              enabling us to serve a wide range of industries with packaging solutions that are not only
+              durable but tailored to your brand’s identity.
+            </p>
+            <p className="pera aboutus_content mx-auto mt-1">
+              At the core of our operations is our use of premium-grade paper, sourced through long-
+              standing partnerships with some of the best paper mills in the country. This ensures that
+              every box we produce meets the highest standards of strength, sustainability, and finish.
+            </p>
+            <p className="pera aboutus_content mx-auto mt-1">
+              As a manufacturer, we bring hands-on expertise to every project, while our strong network
+              of packaging partners allows us to offer a comprehensive range of products—all under one
+              roof. This unique advantage helps us cater to large-scale demands efficiently and ensures
+              quicker turnarounds without compromising on quality.
+            </p>
+            <p className="pera aboutus_content mx-auto mt-1">
+              Our belief in quality and customization drives everything we do. Whether you&#39;re a startup
+              or an established brand, we work closely with you to create packaging that truly reflects your
+              values and meets your functional needs.
+            </p>
+            <p className="pera aboutus_content mx-auto mt-1">
+              Our dedicated customer care team is always ready to respond with clarity, speed, and
+              genuine support—because we don’t just deliver boxes; we build long-term relationships
+              based on trust, transparency, and service.
+            </p>
+            <p className="pera aboutus_content mx-auto mt-1">
+              Choose PAKTRIX-where experience meets innovation, and your packaging vision becomes reality.
             </p>
           </div>
 

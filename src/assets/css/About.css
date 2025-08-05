@@ -1,5 +1,5 @@
 /* Aboutus start */
-.aboutus_bg{
+.aboutus_bg {
   width: 100%;
   height: auto;
   background-image: url("https://www.tharayilpower.com/static/media/testi_bg.f45dc51be227a3befcbe.png");
@@ -9,6 +9,7 @@
 }
 .aboutus_content {
   width: 75%;
+  height: auto;
 }
 @media (max-width: 576px) {
   .aboutus_content {
