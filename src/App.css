@@ -149,10 +149,11 @@
 /* footer start */
 .footerbg {
   /* background: linear-gradient(90deg, #008a43, #00bcd4); */
-  background-color: #005a3c;
+  background-color: #008a43;
 }
 .footericon {
   transition: all 0.3s ease-in-out;
+  border: 2px solid white;
   border-radius: 10px 0px 12px 0px;
   font-size: 19px;
 }
