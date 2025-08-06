@@ -1,5 +1,8 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { BiSolidPhoneCall } from 'react-icons/bi';
+import { FaFacebookF, FaInstagram, FaMailBulk, FaTwitter } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
+import { IoMail } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -21,9 +24,27 @@ function Footer() {
               <div className="h-100 text-white" data-aos="fade-left"
                 data-aos-duration="1500"
                 data-aos-once="true">
-                <div className='fw-medium pera'><span className='fs-5 fw-bold'>Address :</span> <Link to={""} className='text-decoration-none text-white'>3rd Floor, 94/ B, August Kranti Marg, <div>Altamount Road, surat - 395006.</div></Link></div>
-                <div className='fw-medium pera my-2'><span className='fs-5 fw-bold'>Call :</span> <Link to={"tel:+9196385 21470"} className='text-decoration-none text-white'>+(91) 96385 21470</Link></div>
-                <div className='fw-medium pera'><span className='fs-5 fw-bold'>E-mail :</span> <Link to={"mailto:packtrix2025@gmail.com"} target="_blank" className='text-decoration-none text-white'>packtrix2025@gmail.com</Link></div>
+                <div className="fw-medium pera d-flex align-items-start mb-2">
+                  <span className="fw-bold me-2 mt-1" style={{ color: "#f8f9fad6" }}><FaLocationDot className='fs-4' /></span>
+                  <Link to={""} className="text-decoration-none text-white">
+                    3rd Floor, 94/ B, August Kranti Marg,
+                    <div>Altamount Road, Surat - 395006.</div>
+                  </Link>
+                </div>
+
+                <div className="fw-medium pera d-flex align-items-center mb-2">
+                  <span className="fw-bold me-2" style={{ color: "#f8f9fad6" }}><BiSolidPhoneCall className='fs-4' /></span>
+                  <Link to={"tel:+9196385 21470"} className="text-decoration-none text-white">
+                    +(91) 96385 21470
+                  </Link>
+                </div>
+
+                <div className="fw-medium pera d-flex align-items-center">
+                  <span className="fw-bold me-2" style={{ color: "#f8f9fad6" }}><IoMail className='fs-4' /></span>
+                  <Link to={"mailto:packtrix2025@gmail.com"} target="_blank" className="text-decoration-none text-white">
+                    packtrix2025@gmail.com
+                  </Link>
+                </div>
                 <div>
                   <div className='d-flex mt-3 mb-4'>
                     <div className="">
