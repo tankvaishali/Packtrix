@@ -1,7 +1,7 @@
 import React from 'react';
 import { BiSolidPhoneCall } from 'react-icons/bi';
-import { FaFacebookF, FaInstagram, FaMailBulk, FaTwitter } from 'react-icons/fa';
-import { FaLocationDot } from 'react-icons/fa6';
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaMapLocationDot } from 'react-icons/fa6';
 import { IoMail } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ function Footer() {
                 data-aos-duration="1500"
                 data-aos-once="true">
                 <div className="fw-medium pera d-flex align-items-start mb-2">
-                  <span className="fw-bold me-2 mt-1" style={{ color: "#f8f9fad6" }}><FaLocationDot className='fs-4' /></span>
+                  <span className="fw-bold me-2 mt-1" style={{ color: "#f8f9fad6" }}><FaMapLocationDot className='fs-4' /></span>
                   <Link to={""} className="text-decoration-none text-white">
                     3rd Floor, 94/ B, August Kranti Marg,
                     <div>Altamount Road, Surat - 395006.</div>
