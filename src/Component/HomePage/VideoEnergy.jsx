@@ -31,8 +31,9 @@ function VideoEnergy() {
                 data-aos="zoom-out"
                 data-aos-duration="1500"
                 data-aos-once="true"
+                style={{ letterSpacing: "1.5px" }}
               >
-                Empowering <span className='text-info'>Sustainability</span>
+                Sustainable <span className='text-info'>planet</span>
               </h1>
             </div>
           </div>

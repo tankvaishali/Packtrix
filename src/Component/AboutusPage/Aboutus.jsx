@@ -97,12 +97,18 @@ function Aboutus() {
           <div className="aboutus_content mx-auto text-center">
             <h2 className="mt-2 fw-bold titlecolor" data-aos="fade-up"
               data-aos-duration="1500"
-              data-aos-once="true">Why does it matter?</h2>
+              data-aos-once="true">Why is this important?</h2>
             <p className="pera aboutus_content mx-auto mt-1">
-              Our manufacturing facilities are powered by renewable energy sources, and we have implemented several energy-efficient practices to reduce carbon emissions for us and our esteemed customers. We currently save more than 1 million trees to cut, more than 20,000 tons of single-use plastic, 25,000 tons of CO2, 4.3 Million kWh of electricity, and 250,000 barrels of oil.
-            </p>
-            <p className="pera aboutus_content mx-auto">
-              At our company, we believe in transparency and open communication with our customers. We are committed to providing the highest level of customer service and support, and we are always willing to work with our customers to find the best sustainable packaging solutions for their needs.
+              Plastic, once celebrated for its convenience, is now a global environmental crisis. Every year,
+              we generate over 430 million tons of plastic, yet only 9% is recycled. The rest clogs
+              landfills, chokes oceans, and pollutes the air. Each minute, the equivalent of a garbage truck
+              full of plastic enters our oceans, leading to the death of over 100,000 marine animals and
+              1 million seabirds annually. Microplastics have now invaded our food, water, air—and even
+              our blood and lungs—raising serious health concerns. Shockingly, people inhale around 11
+              plastic particles per hour, and plastic production alone could account for 10–13% of global
+              carbon emissions by 2050, drastically worsening climate change. we must start choosing
+              more and more greener alternatives over plastic as a business, individual or a nation to
+              contribute to a better tomorrow.
             </p>
           </div>
 
