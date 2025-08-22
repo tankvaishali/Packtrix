@@ -18,7 +18,7 @@ function HomeAbout() {
               We specialize in eco-friendly, fully recyclable corrugated solutions that are not only built to last, but designed to reflect your brand’s unique identity. With a passion for customization and a commitment to green practices, we empower businesses—big and small—to ship smarter, greener, and more beautifully.
             </div>
             <Link to={"/about"}>
-              <button className="bubbles p-1 px-4 mt-3">
+              <button className="bubbles py-2 px-4 mt-3">
                 <span className="text">About Us</span>
               </button>
             </Link>

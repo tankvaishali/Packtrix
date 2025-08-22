@@ -6,6 +6,7 @@ import Blog from './Component/BlogPage/Blog';
 import Aos from 'aos';
 import { useEffect } from 'react';
 import ScrollToTop from './Component/ScrollToTop';
+import BlogDetails from './Component/BlogPage/BlogDetails';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<Aboutus />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/blogdetails' element={<BlogDetails />} />
         </Routes>
       </BrowserRouter>
     </>
