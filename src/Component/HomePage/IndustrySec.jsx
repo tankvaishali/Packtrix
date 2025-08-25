@@ -54,7 +54,6 @@ function IndustrySec() {
             <div className="">
                 <Container className="industries-section text-center pt-5 pb-4">
                     <h1 className="titlecolor" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Industries We Serve</h1>
-                    <p className='pera mt-2' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique accusamus fuga quod sequi! Doloribus corporis facilis commodi voluptatem error iste?</p>
                     <Row className="justify-content-center mt-4">
                         {IndustryIcons.map((industry, index) => (
                             <div key={index} className='col-lg-2 col-md-3 col-sm-4 col-6 m-sm-2 mt-3 mb-4' data-aos="fade-up"

@@ -10,7 +10,7 @@ function Footer() {
     <>
       <div className="footerbg">
         <div className="container">
-          <div className="footer_width row mx-auto jusyify-content-center align-items-center pt-5 overflow-hidden">
+          <div className="footer_width row mx-auto jusyify-content-center align-items-center pt-5 pb-3 overflow-hidden">
             <div className="col-12 col-lg-6 mb-4">
               <div className="h-100">
                 <div className='bg-white' data-aos="fade-right"
@@ -26,16 +26,15 @@ function Footer() {
                 data-aos-once="true">
                 <div className="fw-medium pera d-flex align-items-start mb-2">
                   <span className="fw-bold me-2 mt-1" style={{ color: "#f8f9fad6" }}><FaMapLocationDot className='fs-4' /></span>
-                  <Link to={""} className="text-decoration-none text-white">
-                    3rd Floor, 94/ B, August Kranti Marg,
-                    <div>Altamount Road, Surat - 395006.</div>
+                  <Link to={"https://maps.app.goo.gl/KGQK1Zw1yB8VPfNH7"} target="_blank" className="text-decoration-none text-white">
+                    N-29, Sai Krupa Society, Anjanafarm, Nr. Raghukul Market, Railway Bridge, Surat - 395007.
                   </Link>
                 </div>
 
                 <div className="fw-medium pera d-flex align-items-center mb-2">
                   <span className="fw-bold me-2" style={{ color: "#f8f9fad6" }}><BiSolidPhoneCall className='fs-4' /></span>
-                  <Link to={"tel:+9196385 21470"} className="text-decoration-none text-white">
-                    +(91) 96385 21470
+                  <Link to={"tel:+919099924140"} className="text-decoration-none text-white">
+                    +(91) 90999 24140
                   </Link>
                 </div>
 
@@ -45,42 +44,36 @@ function Footer() {
                     packtrix2025@gmail.com
                   </Link>
                 </div>
-                <div>
-                  <div className='d-flex mt-3 mb-4'>
+                <div className='d-flex mt-3 mb-4'>
+                  <div className='d-flex'>
                     <div className="">
                       <Link
-                        // to={"/"}
+                        to={"https://www.facebook.com/people/Paktrix/61577301784476/"}
+                        target='_blank'
                         style={{ width: "fit-content" }}
-                        className="footericon text-center p-2 d-flex text-decoration-none text-white facebookicon">
-                        <FaFacebookF />
+                        className="text-decoration-none text-white">
+                        <FaFacebookF className='fw-bold fs-5' />
                       </Link>
                     </div>
 
-                    <div className="px-3">
+                    <div className="px-2">
                       <Link
-                        // to={"/"}
+                        to={"https://www.instagram.com/paktrix_packagings/?igsh=MW05ZWdtc29xdm94Mw%3D%3D&utm_source=qr#"}
+                        target='_blank'
                         style={{ width: "fit-content" }}
-                        className="footericon text-center p-2 d-flex text-decoration-none text-white instaicon">
-                        <FaInstagram />
+                        className="text-decoration-none text-white">
+                        <FaInstagram className='fw-bold fs-5' />
                       </Link>
                     </div>
-                    <div className="">
-                      <Link
-                        // to={"/"}
-                        style={{ width: "fit-content" }}
-                        className="footericon text-center p-2 d-flex text-decoration-none text-white twittericon">
-                        <FaTwitter />
-                      </Link>
-                    </div>
+                  </div>
+                  <div className='pera text-white fw-medium ms-auto pe-3'>
+                    © 2025 by paktrix.com
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <hr className='border border-white' />
-          <div className='pera text-white fw-medium text-center pb-3'>
-            © 2025 by paktrix.com
-          </div>
+
         </div>
       </div>
     </>

@@ -54,7 +54,7 @@
 }
 .eco-table {
   border-collapse: collapse;
-  width: 60%;
+  width: 70%;
   text-align: left;
 }
 .eco-table th,
@@ -69,6 +69,10 @@
 @media (max-width: 576px) {
   .eco-table {
     width: 100%;
+  }
+  .eco-table th,
+  .eco-table td {
+    font-size: 12px !important;
   }
 }
 /* BlogDetails end */

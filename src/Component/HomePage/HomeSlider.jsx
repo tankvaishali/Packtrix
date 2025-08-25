@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../HomePage/HomeSlider.css';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const slides = [
     {
@@ -31,6 +32,11 @@ function HomeSlider() {
     const timeoutRef = useRef(null);
 
     useEffect(() => {
+        startAutoSlide();
+        return () => clearTimeout(timeoutRef.current);
+    }, [currentIndex]);
+
+    const startAutoSlide = () => {
         setFade(true);
         timeoutRef.current = setTimeout(() => {
             setFade(false);
@@ -40,15 +46,41 @@ function HomeSlider() {
                 );
             }, 300);
         }, 4000);
+    };
 
-        return () => clearTimeout(timeoutRef.current);
-    }, [currentIndex]);
+    const goToNext = () => {
+        clearTimeout(timeoutRef.current);
+        setFade(false);
+        setTimeout(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 300);
+    };
+
+    const goToPrev = () => {
+        clearTimeout(timeoutRef.current);
+        setFade(false);
+        setTimeout(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+            );
+        }, 300);
+    };
 
     const currentSlide = slides[currentIndex];
 
     return (
         <div className='container mb-5 mt-4 mt-lg-5'>
-            <div className='homeslider_bg p-4 p-lg-5 rounded-4'>
+            <div className='homeslider_bg p-4 p-lg-5 rounded-4 position-relative slider-wrapper'>
+
+                <div className="arrow left-arrow" onClick={goToPrev}>
+                    <FaChevronLeft className="arrow-icon" />
+                </div>
+                <div className="arrow right-arrow" onClick={goToNext}>
+                    <FaChevronRight className="arrow-icon" />
+                </div>
+
                 <div className='row align-items-center gy-4'>
                     <div className='col-12 col-lg-6 d-flex justify-content-center'>
                         <div className={`image-glow ${fade ? 'fade-in' : 'fade-out'}`}>
