@@ -36,7 +36,7 @@ function BlogDetails() {
     ]
 
     return (
-        <><div className='aboutus_bg py-4'>
+        <><div className='aboutus_bg pb-4 pt-2 pt-lg-3'>
             <div className='container text-center'>
                 <div className='aboutus_content mx-auto'>
                     <div className='text-center'>

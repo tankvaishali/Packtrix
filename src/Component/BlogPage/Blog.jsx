@@ -13,7 +13,7 @@ const blogData = [
 
 function Blog() {
   return (
-    <div className='container my-4 my-lg-5'>
+    <div className='container mb-4 mt-3 mt-lg-4'>
       <div className='row justify-content-center p-2'>
         {blogData.map((blog, index) => (
           <div className='col-12 col-lg-10' key={index}>

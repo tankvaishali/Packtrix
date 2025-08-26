@@ -71,7 +71,7 @@ function HomeSlider() {
     const currentSlide = slides[currentIndex];
 
     return (
-        <div className='container mb-5 mt-4 mt-lg-5'>
+        <div className='container mb-5 mt-3 mt-lg-4'>
             <div className='homeslider_bg p-4 p-lg-5 rounded-4 position-relative slider-wrapper'>
 
                 {/* Arrows */}
