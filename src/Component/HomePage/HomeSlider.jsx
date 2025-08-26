@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../HomePage/HomeSlider.css';
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaRecycle } from "react-icons/fa";
 
 const slides = [
     {
@@ -74,6 +74,7 @@ function HomeSlider() {
         <div className='container mb-5 mt-4 mt-lg-5'>
             <div className='homeslider_bg p-4 p-lg-5 rounded-4 position-relative slider-wrapper'>
 
+                {/* Arrows */}
                 <div className="arrow left-arrow" onClick={goToPrev}>
                     <FaChevronLeft className="arrow-icon" />
                 </div>
@@ -82,25 +83,35 @@ function HomeSlider() {
                 </div>
 
                 <div className='row align-items-center gy-4'>
+
                     <div className='col-12 col-lg-6 d-flex justify-content-center'>
                         <div className={`image-glow ${fade ? 'fade-in' : 'fade-out'}`}>
                             <img
                                 src={currentSlide.image}
                                 className='img-fluid w-100 h-100 object-fit-cover rounded-4'
-                                alt="Slide"
+                                alt={currentSlide.title}
                             />
                         </div>
                     </div>
-                    <div className='col-12 col-lg-6 text-white text-center text-lg-start'>
+
+                    <div className='col-12 col-lg-6 text-white position-relative'>
                         <div className={`text-slide ${fade ? 'fade-in-left' : 'fade-out-left'}`}>
-                            <h1 className='title-glow mb-3'>
-                                {currentSlide.title.split('\n').map((line, i) => (
-                                    <div key={i}>{line}</div>
-                                ))}
-                            </h1>
-                            <p className='tagline text-uppercase'>{currentSlide.tagline}</p>
+
+                            <div className="recycle-icon-above-title">
+                                <FaRecycle size={50} color="white" />
+                            </div>
+
+                            <div className="content-text text-center text-lg-start">
+                                <h1 className='title-glow mb-3'>
+                                    {currentSlide.title.split('\n').map((line, i) => (
+                                        <div key={i}>{line}</div>
+                                    ))}
+                                </h1>
+                                <p className='tagline text-uppercase'>{currentSlide.tagline}</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

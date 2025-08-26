@@ -172,3 +172,25 @@
     display: none !important;
   }
 }
+.recycle-icon-above-title {
+  position: absolute;
+  top: -50px;
+  right: 15px;
+  z-index: 5;
+}
+.recycle-icon-above-title svg {
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+.recycle-icon-above-title svg:hover {
+  transform: rotate(20deg) scale(1.1);
+  color: #00ffcc;
+}
+@media (max-width: 992px) {
+  .content-text {
+    text-align: center !important;
+  }
+  .recycle-icon-above-title {
+    display: none !important;
+  }
+}

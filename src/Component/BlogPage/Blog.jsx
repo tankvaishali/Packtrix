@@ -7,7 +7,7 @@ const blogData = [
   {
     image: require("../../assets/images/sustainable packing image.jpg"),
     title: "Sustainable Packaging: A Competitive Advantage For Forward-Thinking Businesses",
-    content: "In today’s marketplace, sustainability is no longer optional—it’s a competitive necessity. Consumers, regulators, and investors increasingly expect companies to adopt eco- friendly practices. Among these, sustainable packaging stands out as a powerful way for businesses to differentiate themselves. Beyond reducing environmental harm, it can unlock cost savings, improve customer loyalty, and open doors to innovation."
+    content: "In today’s marketplace, sustainability is no longer optional—it’s a competitive necessity. Consumers, regulators, and investors increasingly expect companies to adopt eco-friendly practices."
   },
 ];
 

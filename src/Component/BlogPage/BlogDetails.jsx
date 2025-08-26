@@ -129,9 +129,9 @@ function BlogDetails() {
                         <h4 className='fw-bold titlecolor' data-aos="fade-up"
                             data-aos-duration="1500"
                             data-aos-once="true">🧠 Did You Know?</h4>
-                        <p className='pera'>64% of global consumers say a brand’s position on environmental sustainability influences their loyalty.
+                        <div className='pera'>64% of global consumers say a brand’s position on environmental sustainability influences their loyalty.
                             <div className='fw-medium'>(Source : Capgemini Research Institute)</div>
-                        </p>
+                        </div>
                     </div>
                     <div className='mt-2'>
                         <h4 className='fw-bold titlecolor' data-aos="fade-up"

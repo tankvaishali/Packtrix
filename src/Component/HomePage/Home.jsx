@@ -7,6 +7,7 @@ import IndustrySec from './IndustrySec';
 import HOC from '../../HOC';
 // import HomeCarousel from './HomeCarousel';
 import HomeSlider from './HomeSlider';
+import BlogPost from './BlogPost';
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
       </div>
       <VideoEnergy />
       <IndustrySec />
+      <BlogPost />
     </div>
   );
 }
