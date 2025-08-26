@@ -22,25 +22,33 @@ function BlogPost() {
                     data-aos-duration="1500"
                     data-aos-once="true"
                 >
-                    Our Blog
+                    Blog Posts
                 </div>
             </div>
-            <div className='row justify-content-center mt-3'>
+            <div className='row justify-content-center mt-2'>
                 {blogData.map((blog) => (
                     <div key={blog.id} className='col-12 col-md-6 col-lg-4 mb-4'>
-                        <div className='h-100 shadow' style={{ borderRadius: "10px", border: "3px ridge #008a43" }}>
+                        <div
+                            className='h-100 shadow'
+                            style={{ borderRadius: "10px", border: "3px ridge #008a43" }}
+                        >
                             <div>
                                 <img
                                     src={blog.image}
-                                    className='img-fluid w-100 h-100 object-fit-cover'
+                                    className='img-fluid w-100'
                                     alt={blog.title}
-                                    style={{ borderRadius: "7px 7px 0px 0px" }}
+                                    style={{
+                                        borderRadius: "7px 7px 0px 0px",
+                                        height: "200px",       
+                                        objectFit: "cover",  
+                                        backgroundColor: "#f8f8f8" 
+                                    }}
                                 />
                             </div>
                             <div className='p-3'>
                                 <div
                                     className='titlecolor fw-bold blog-title'
-                                    style={{ wordBreak: "break-word", fontSize: "18px" }}
+                                    style={{ wordBreak: "break-word", fontSize: "17px" }}
                                 >
                                     {blog.title}
                                 </div>

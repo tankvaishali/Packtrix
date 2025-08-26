@@ -1,6 +1,6 @@
-import { FaWhatsapp } from "react-icons/fa";
 import Header from "./Component/Header";
 import Footer from "./Footer";
+import { AiFillMessage } from "react-icons/ai";
 
 function HOC(Component) {
     function NewComponent() {
@@ -14,10 +14,12 @@ function HOC(Component) {
                     href="https://wa.me/919099924140"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="whatsapp-float"
+                    className="whatsapp-float py-2 py-md-3 px-4"
                 >
-                    <FaWhatsapp size={40} />
+                    <AiFillMessage size={24} className="me-2" />
+                    <span className="fw-bold fs-6">Let's Chat!</span>
                 </a>
+
             </>
         );
     }
