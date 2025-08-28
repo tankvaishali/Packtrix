@@ -16,8 +16,8 @@ function HOC(Component) {
                     rel="noopener noreferrer"
                     className="whatsapp-float py-2 py-md-3 px-4"
                 >
-                    <AiFillMessage size={24} className="me-2" />
-                    <span className="fw-bold fs-6">Let's Chat!</span>
+                    <AiFillMessage size={22} className="me-2" />
+                    <span className="fw-bold" style={{ fontSize: "15px" }}>Let's Chat!</span>
                 </a>
 
             </>

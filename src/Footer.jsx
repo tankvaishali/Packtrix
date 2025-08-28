@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
       <div className="footerbg">
-        <div className="container">
+        <div className="container py-1 py-lg-2">
           <div className="footer_width row mx-auto jusyify-content-center align-items-center pt-3 pt-lg-5 pb-4 pb-lg-3 overflow-hidden">
             <div className="col-12 col-lg-4 mb-3 mb-lg-4">
               <div className="h-100">
@@ -26,8 +26,8 @@ function Footer() {
                 data-aos-once="true">
                 <div className="fw-medium pera d-flex align-items-start mb-2">
                   <span className="fw-bold me-2 mt-1" style={{ color: "#f8f9fad6" }}><FaMapLocationDot className='fs-4' /></span>
-                  <Link to={"https://maps.app.goo.gl/KGQK1Zw1yB8VPfNH7"} target="_blank" className="text-decoration-none text-white">
-                    No.-29, Sai Kripa Society, Anjanafarm, Nr. Raghukul Mkt., Railway Bridge, Ring Road, Surat-395007.
+                  <Link to={"https://maps.app.goo.gl/E6pW7qP6CB52yenj9"} target="_blank" className="text-decoration-none text-white">
+                    No.-29, Sai Krupa Society, Anjanafarm, Nr. Raghukul Mkt., Railway Bridge, Ring Road, Surat-395007.
                   </Link>
                 </div>
 
@@ -41,8 +41,8 @@ function Footer() {
 
                   <div className="fw-medium pera d-flex align-items-center mb-2">
                     <span className="fw-bold me-2" style={{ color: "#f8f9fad6" }}><IoMail className='fs-4' /></span>
-                    <Link to={"mailto:packtrix2025@gmail.com"} target="_blank" className="text-decoration-none text-white">
-                      packtrix2025@gmail.com
+                    <Link to={"mailto:info@paktrix.com"} target="_blank" className="text-decoration-none text-white">
+                      info@paktrix.com
                     </Link>
                   </div>
                 </div>
