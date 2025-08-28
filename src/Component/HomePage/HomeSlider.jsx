@@ -22,7 +22,12 @@ const slides = [
         image: require("../../assets/images/carouselimages/pizza-box.jpg"),
         title: "Custom Food Packaging",
         tagline: "Designed to impress, built to protect"
-    }
+    },
+    // {
+    //     image: require("../../assets/images/carouselimages/Textile Saree Boxes.jpg"),
+    //     title: "Textile Saree Boxes",
+    //     tagline: "Timeless Designs, Inspired by Tradition"
+    // }
 ];
 
 function HomeSlider() {

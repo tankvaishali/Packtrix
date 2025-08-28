@@ -10,13 +10,13 @@ function Footer() {
     <>
       <div className="footerbg">
         <div className="container">
-          <div className="footer_width row mx-auto jusyify-content-center align-items-center pt-5 pb-3 overflow-hidden">
-            <div className="col-12 col-lg-4 mb-4">
+          <div className="footer_width row mx-auto jusyify-content-center align-items-center pt-3 pt-lg-5 pb-4 pb-lg-3 overflow-hidden">
+            <div className="col-12 col-lg-4 mb-3 mb-lg-4">
               <div className="h-100">
-                <div className='bg-white' data-aos="fade-right"
+                <div className='' data-aos="fade-right"
                   data-aos-duration="1500"
-                  data-aos-once="true" style={{ width: "100%", height: "130px" }}>
-                  <img src={require("./assets/images/Media (2).jpeg")} alt="" className='img-fluid h-100 w-100 object-fit-contain' />
+                  data-aos-once="true" style={{ width: "100%" }}>
+                  <img src={require("./assets/images/paktrix.png")} alt="" className='img-fluid h-100 w-100' />
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@ function Footer() {
                 <div className="fw-medium pera d-flex align-items-start mb-2">
                   <span className="fw-bold me-2 mt-1" style={{ color: "#f8f9fad6" }}><FaMapLocationDot className='fs-4' /></span>
                   <Link to={"https://maps.app.goo.gl/KGQK1Zw1yB8VPfNH7"} target="_blank" className="text-decoration-none text-white">
-                    N-29, Sai Krupa Society, Anjanafarm, Nr. Raghukul Market, Railway Bridge, Surat - 395007.
+                    No.-29, Sai Kripa Society, Anjanafarm, Nr. Raghukul Mkt., Railway Bridge, Ring Road, Surat-395007.
                   </Link>
                 </div>
 
